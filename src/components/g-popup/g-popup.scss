@@ -1,0 +1,40 @@
+.g-popup
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(19, 22, 22, 0.8);
+	z-index: 1000;
+	transition: all .3s;
+	transform: translateY(-5px);
+	opacity: 0;
+	visibility: hidden;
+	padding: 0 20px;
+}
+.g-popup.open
+{
+	opacity: 1;
+	visibility: visible;	
+	transform: translateY(0);
+}
+.g-popup__content
+{
+	position: relative;
+	background: rgba(34, 37, 37, 1);
+	border-radius: 20px;
+	padding: 35px 20px;
+	max-width: 480px;
+	width: 100%;
+}
+.g-popup__close
+{
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	cursor: pointer;
+}

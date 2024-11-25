@@ -1,0 +1,31 @@
+<header>
+	<div class="header__wrap container">
+		<a href="#" class="header__logo">
+			{% include 'assets/svg/headerLogo.svg'%}
+		</a>
+		<div class="header__menu">
+			<button class="header__menu-btn _headerMenuBtn" onclick="mainObj.header.showMenu(this)">
+				<span class="_headerBtnName1">Меню</span><span class="_headerBtnName2">Свернуть</span>
+			</button>		
+			<ul class="header__menu-list _headerMenuList">
+				<li class="header__menu-items">
+					<a href="#">Главная</a>
+				</li>
+				<li class="header__menu-items">
+					<a href="#">О нас</a>
+				</li>
+				<li class="header__menu-items">
+					<a href="#">Контакты</a>
+				</li>
+				<li class="header__menu-items">
+					<a href="#">Поиск</a>
+				</li>
+			</ul>
+			<button class="header__menu-btn--tel" onclick="mainObj.header.showTel(this)">Контакты</button>
+			<div class="header__menu-phone--wrap _headerPhoneWrap">
+				{% include 'assets/svg/header-phone.svg'%}
+				<a href="tel:+798788787" class="header__menu-phone">+7 (987) 887-87</a>
+			</div>
+		</div>
+	</div>
+</header>
